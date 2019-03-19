@@ -36,7 +36,7 @@ Nhưng hãy xem xét phản xạ của hai thí sinh trong tình huống sau đ�
 
 Nếu như đây không phải là một cuộc thi vẽ qua nhiều điểm mà là một bài toán machine learning, có lẽ anh họa sĩ đã thua rồi. Bởi vì điểm bị dịch chuyển có thể là do tác động của noise để hòng đánh lừa anh. Anh họa sĩ đại diện cho một tập model cực mạnh, có khả năng mô phỏng mọi hàm số. Một tập model mạnh như vậy rất nhạy cảm với [noise](https://ml-book-vn.khanhxnguyen.com/1_3_overfitting.html) và dễ dàng bị overfitting.
 
-![](http://khanhxnguyen.com/wp-content/uploads/2016/06/Model-quá-mạnh.png)
+![](/assets/Model-quá-mạnh.png)
 
 ### Sự kết hợp giữa các yếu tố gây overfitting
 
