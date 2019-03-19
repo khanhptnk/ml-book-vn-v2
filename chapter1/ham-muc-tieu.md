@@ -8,7 +8,7 @@ Khi nói đến việc "giải" training problem tức là ta đang nói đến 
 
 ## Objective function
 
-Để dự đoán tốt nhất trên test set, cách đơn giản nhất là tìm model dự đoán tốt nhất trên training set, và _hy vọng_ rằng nó cũng sẽ dự đoán tốt trên test set. Vì thế, ở [bài trước](https://ml-book-vn.khanhxnguyen.com/1_1_two_views.html) ta phát biểu rằng:  
+Để dự đoán tốt nhất trên test set, cách đơn giản nhất là tìm model dự đoán tốt nhất trên training set, và _hy vọng_ rằng nó cũng sẽ dự đoán tốt trên test set. Vì thế, ở [bài trước](https://khanh-personal.gitbook.io/ml-book-vn/chapter1/hai-goc-nhin-ve-supervised-learning) ta phát biểu rằng:  
 1. **Train**: tìm model $$f_w$$ tối thiểu hóa giá trị của evaluation function trên training set.  
 2. **Test**: thông báo độ tốt của $$f_w$$ là gía trị của evaluation trên test set.
 
@@ -20,7 +20,7 @@ Không có điều gì đảm bảo model dự đoán hoàn chính xác trên tr
 
 Thứ hai, trong phát biểu trên ta dùng cùng một loss function cho cả train và test. Đây là một trường hợp rất lý tưởng và hiếm gặp trong thực tiễn. Trong đa số trường hợp, **loss function được sử dụng lúc train và lúc test không giống nhau**. Kì lạ đúng không? Tại sao chúng ta "dạy" một đằng, nhưng mà lại "ra đề" một nẻo?
 
-[Evaluation function](https://ml-book-vn.khanhxnguyen.com/1_1_two_views.html) thường dùng thường rất khó để tối thiểu hóa bằng các phương pháp toán học \(sẽ giải thích ngay sau phần này\). Lý do khái quát là do các evaluation function này thường là tổng của của các loss function có dạng _0-1 loss_, tức là chỉ trả về 0 hoặc 1 và phải trùng hoàn toàn với label thật thì mới nhận được 0. Error rate là một ví dụ điển hình của 0-1 loss. Đối với những hàm như vậy, nếu model đoán sai thì không biết sửa chữa theo hướng nào để tiến bộ hơn.
+[Evaluation function](https://khanh-personal.gitbook.io/ml-book-vn/~/drafts/-LaKMlHHR910Z_G6flTw/primary/chapter1/hai-goc-nhin-ve-supervised-learning#goc-nhin-thu-hai-toi-uu-ham-so) thường dùng thường rất khó để tối thiểu hóa bằng các phương pháp toán học \(sẽ giải thích ngay sau phần này\). Lý do khái quát là do các evaluation function này thường là tổng của của các loss function có dạng _0-1 loss_, tức là chỉ trả về 0 hoặc 1 và phải trùng hoàn toàn với label thật thì mới nhận được 0. Error rate là một ví dụ điển hình của 0-1 loss. Đối với những hàm như vậy, nếu model đoán sai thì không biết sửa chữa theo hướng nào để tiến bộ hơn.
 
 Khi train, ta cần một loss function cho **partial credit**, tức là đúng tới đâu cho điểm tới đó và dự đoán thế nào cũng có điểm. Model có thể tận dụng điều này để thay đổi câu trả lời một chút xem điểm tăng hay giảm, dần dần tìm ra câu trả lời đúng. Một trong những loss function thường được sử dụng nhất là **negative log-likelihood**. Khi sử dụng loss function này, model của chúng ta thay vì đưa ra một đáp án cụ thể, thì sẽ đưa ra xác suất observation $$x$$ mang label $$y$$, tức là $$f_w(x) \equiv P_w(y \mid x)$$. Negative log-likelihood được định nghĩa như sau:
 
