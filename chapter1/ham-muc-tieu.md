@@ -42,7 +42,7 @@ Giống với evaluation function, nếu không có regularizer, objective funct
 
 **Câu hỏi**: _evaluation function và objective function khác nhau thế nào?_
 
-**Trả lời**: _khác nhau ở loss function và regularizer_.
+**Trả lời**: _khác nhau ở dạng của loss function và regularizer_. 
 
 Đến đây ta phát biểu lại về hai quá trình của supervised learning:  
 1. **Train**: tìm $$f_w$$ tối thiểu hóa objective function $$\mathcal{L}_{D_{train}}(f_w)$$.  
