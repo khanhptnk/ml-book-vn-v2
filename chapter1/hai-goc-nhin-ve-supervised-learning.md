@@ -22,7 +22,7 @@ Cho đến giờ, người ta vẫn phải làm thí nghiệm trong thực tế 
 
 Ví dụ, nếu nhận được 100 cặp observation-label, ta chỉ dùng khoảng 80 cặp để xây dựng ra $$f_w$$. Còn lại 20 cặp, ta giấu không cho model nhìn thấy lúc nó học. Sau khi model học từ 80 cặp dữ liệu, ta sẽ cho các observation của 20 cặp dữ liệu còn lại vào model để tạo ra các label dự đoán, rồi so sánh chúng với các label thật \(do $$f^*$$ sinh ra\). 80 cặp được dùng để xây dựng ra model gọi là **training set** \(tập huấn luyện\), còn 20 cặp dùng để đánh giá model gọi là **test set** \(tập kiểm tra\). Tương ứng, supervised learning cũng được chia thành hai quá trình: **train** \(lúc model học\) và **test** \(lúc đánh giá model\).
 
-![](/assets/ML101-accuracy.png)
+![](/assets/ml-accuracy.png)
 
 **Q2**: Tại sao không dùng tất cả dữ liệu để train rồi test trên đó luôn?
 
