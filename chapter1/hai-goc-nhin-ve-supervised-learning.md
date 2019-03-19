@@ -24,13 +24,16 @@ Ví dụ, nếu nhận được 100 cặp observation-label, ta chỉ dùng kho�
 
 ![](/assets/ml-accuracy.png)
 
+
 **Q2**: Tại sao không dùng tất cả dữ liệu để train rồi test trên đó luôn?
 
 **A2**: Trong machine learning, có một nguyên tắc vô cùng, vô cùng quan trọng cần nhớ: **đó là quá trình train và test phải độc lập với nhau! Dữ liệu được dùng để test model phải không được model nhìn thấy lúc train.** Có rất nhiều cách để vi phạm nguyên tắc này, và điều dẫn đến một hậu quả "thảm khốc", **overfitting**. Mình sẽ giải thích về hiện tượng này trong một dịp khác. Nói nôm na là model của bạn sẽ biến thành một con vẹt, chẳng học được gì khác ngoài việc lặp lại những gì nó đã nhìn thấy. Vì thế, bạn phải chia dữ liệu ra thành training set và test set, và phải làm điều này trước khi train model.
 
 Tuy đã làm cho trò chơi supervised learning trở nên hợp lệ, ta vẫn chưa thể chơi được. Có hai vấn đề phát sinh, đó là:
 
-1. Thế nào là một model "tốt" trên test set? 2. Làm sao để tìm ra được một model "tốt" từ training set?
+1. Thế nào là một model "tốt" trên test set? 
+
+2. Làm sao để tìm ra được một model "tốt" từ training set?
 
 Vấn đề thứ nhất gọi là **evaluation problem** và vấn đề thứ hai gọi là **training problem**. _Giải một bài toán machine learning tức là bạn đi tìm lời giải cụ thể cho hai vấn đề này_.
 
