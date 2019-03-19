@@ -10,7 +10,7 @@ Cẩn thận! Khi dùng test set để xác định hyperparameter, ta đã vi p
 
 Trong bài viết trước, vì chưa nhắc giới thiệu khái niệm development set nên định nghĩa early stopping của mình cũng đã vi phạm quy tắc train-test độc lập. Cụ thể, vì thời điểm dừng huấn luyện phụ thuộc vào độ sai sót trên test set, mà model cuối cùng nhận được lại phụ thuộc vào thời điểm dừng huấn luyện, suy ra test set đã gián tiếp chỉ định model cuối cùng. Sau khi biết đến development set, để áp dụng early stopping một cách đúng đắn, thì ta chỉ việc thay learning curve trên test set bằng learning curve trên development set.
 
-![](http://khanhxnguyen.com/wp-content/uploads/2016/06/early-stopping-2.png)
+![](/assets/early-stopping-2.png)
 
 Trong nghiên cứu, tỉ lệ train:dev:test thường được dùng đó là 8:1:1. Tức là nếu có 100 điểm dữ liệu, thì lấy 80 điểm để huấn luyện, 10 điểm để phát triển, và 10 điểm để kiểm tra.
 
