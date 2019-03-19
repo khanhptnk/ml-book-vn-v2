@@ -4,7 +4,7 @@
 * [Machine Learning là gì?](machine-learning-la-gi.md)
 * [Khái niệm cơ bản](khai-niem-co-ban.md)
 * [Supervised Learning](chapter1.md)
-  * Hai góc nhìn về Supervised Learning
+  * [Hai góc nhìn về Supervised Learning](chapter1/hai-goc-nhin-ve-supervised-learning.md)
   * [Hàm mục tiêu](chapter1/ham-muc-tieu.md)
   * [Overfitting](chapter1/overfitting.md)
   * [Regularized Loss Minimization](chapter1/regularized-risk-minimization.md)
