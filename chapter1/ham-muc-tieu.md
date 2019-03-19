@@ -1,6 +1,6 @@
 # Hàm mục tiêu \(objective function\)
 
-Giữa training và evaluation, evaluation đơn giản hơn vì bạn chỉ việc đưa observation vào model, nhận về label dự đoán, và tính giá trị của evaluation function trên test set. Training phức tạp hơn vì quá trình này phải đảm bảo rằng model phải có khả năng dự đoán tốt không chỉ trên training set mà còn trên test set \(là dữ liệu không được model nhìn thấy lúc train\). Bài viết giải thích tại sao không thể sử dụng các evaluation function như error rate để train model, và giới thiệu về khái niệm objective function.
+Giữa training và evaluation, evaluation đơn giản hơn vì bạn chỉ việc đưa observation vào model, nhận về label dự đoán, và tính giá trị của evaluation function trên test set. Training phức tạp hơn vì quá trình này phải đảm bảo rằng model phải có khả năng dự đoán tốt không chỉ trên training set mà còn trên test set \(là dữ liệu không được model nhìn thấy lúc train\). Bài viết giải thích tại sao không thể sử dụng các evaluation function như error rate để train model, và giới thiệu về khái niệm hàm mục tiêu \(objective function\).
 
 ## Mục tiêu tối thượng của supervised learning
 
